@@ -6,7 +6,6 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server pwgen
 
 # Add image configuration and scripts
-ADD start.sh /start.sh
 ADD run.sh /run.sh
 ADD my.cnf /etc/mysql/conf.d/my.cnf
 ADD create_mysql_admin_user.sh /create_mysql_admin_user.sh
